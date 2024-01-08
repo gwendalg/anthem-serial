@@ -2,7 +2,7 @@
 Support for Anthem Network Receivers.
 
 For more details about this platform, please refer to the documentation at
-https://home-assistant.io/components/media_player.anthem/
+https://github.com/gwendalg/anthem-serial/blob/main/README.md
 """
 import io
 import logging
