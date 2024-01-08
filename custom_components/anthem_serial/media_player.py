@@ -20,14 +20,6 @@ from .const import DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
 
-SUPPORT_ANTHEM = (
-    MediaPlayerEntityFeature.VOLUME_SET
-    | MediaPlayerEntityFeature.VOLUME_MUTE
-    | MediaPlayerEntityFeature.TURN_ON
-    | MediaPlayerEntityFeature.TURN_OFF
-    | MediaPlayerEntityFeature.SELECT_SOURCE
-)
-
 # Need to be configured.
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
     {
@@ -158,7 +150,11 @@ class AnthemEntity(MediaPlayerEntity):
     @property
     def supported_features(self):
         """Flag of media commands that are supported."""
-        return SUPPORT_ANTHEM
+        return (MediaPlayerEntityFeature.VOLUME_SET
+			| MediaPlayerEntityFeature.VOLUME_MUTE
+			| MediaPlayerEntityFeature.TURN_ON
+			| MediaPlayerEntityFeature.TURN_OFF
+			| MediaPlayerEntityFeature.SELECT_SOURCE)
 
     @property
     def source(self):
