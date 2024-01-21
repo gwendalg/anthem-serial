@@ -2,7 +2,13 @@
 
 Custom Anthem Serial component written in Python3 for Home Assistant. Controls older, serial based, [Anthem] <abbr title="Audio & video">A/V</abbr> receivers and processors. Newer, IP based, receivers are controlled with [Anthem AV](https://www.home-assistant.io/integrations/anthemav/) plugin.
 
-Input selection, power and volume control are supported.
+## Supported features
+
+- turn on/off
+- set input
+- volume control
+
+RS-232 control [codes](https://www.anthemav.com/downloads/anthemMRX_RS-232.071811.zip) are used as a reference.
 
 ## Supported models
 
