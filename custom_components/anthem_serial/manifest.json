@@ -7,5 +7,6 @@
   "iot_class": "local_polling",
   "name": "Anthem Serial",
   "requirements": ["pyserial==3.5"],
+  "issue_tracker": "https://github.com/gwendalg/anthem-serial/issues",
   "version": "1.0.0"
 }
